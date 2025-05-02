@@ -1,40 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+## IGNITE SHOP
 
-## Getting Started
+Este é o resultado de um estudo aprofundado de React.js com framework Next.js, realizado no treinamento Ignite, da Rocketseat.
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 💻 Sobre
+Neste projeto inovador, desenvolvi uma Loja Virtual de camisetas utilizando Next.js e integrei o sistema de pagamentos Stripe pela primeira vez. A aplicação consome a API do Stripe para cadastrar produtos, definir preços e criar descrições atraentes.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Ao explorar as funcionalidades do Stripe, implementei a requisição e listagem dos produtos, utilizando as informações armazenadas na minha conta do Stripe. Destaco que o carrinho de compras está totalmente funcional e integrado de forma eficiente com o sistema de pagamentos.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Para garantir uma experiência de usuário aprimorada, o projeto adota estratégias de otimização cruciais. Utilizo páginas estáticas (SSG) e renderização pelo lado do servidor (SSR) para reduzir a carga nos servidores e otimizar a performance da aplicação.
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Do ponto de vista visual, o projeto apresenta um design atraente, e para enriquecer a experiência de compra, implementei notificações Toast no carrinho, proporcionando um toque visual interessante durante a navegação.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+Este projeto representa uma combinação de inovação tecnológica, eficiência no processamento e atenção aos detalhes para criar uma loja virtual moderna e funcional.
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+## 🎨 Layout
+A página em formato desktop é vista na imagem abaixo:
 
-To learn more about Next.js, take a look at the following resources:
+![Capa](https://user-images.githubusercontent.com/106932234/225004382-d8c75483-3bdb-4d97-8580-e63d9ca57928.png)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🛠 Tecnologias
 
-## Deploy on Vercel
+As seguintes tecnologias foram empregadas na criação deste projeto:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+- [ReactJs](https://reactjs.org)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Next.js](https://nextjs.org/)
+- [Axios](https://axios-http.com/ptbr/docs/intro)
+- [Phosphor Icons](https://phosphoricons.com/)
+- [Keen Slider](https://keen-slider.io/)
+- [RadixUI](https://www.radix-ui.com/)
+- [Stripe](https://stripe.com/)
