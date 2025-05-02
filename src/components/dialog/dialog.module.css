@@ -1,0 +1,210 @@
+.DialogOverlay {
+    background-color: rgba(0,0,0,0.6);
+    inset: 0;
+    position: fixed;
+    z-index: 2;
+    
+  }
+  
+  
+  .DialogContent {
+    background-color: #202024;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: min(100%, 48rem);
+    z-index: 3;
+  }
+  
+  .DialogContent[data-state="open"] {
+    animation: contentShow 0.4s;
+  
+  }
+  
+  .DialogContent[data-state="closed"] {
+    animation: contentHidden 0.4s;
+  }
+  
+  @keyframes contentShow {
+    from {
+      opacity: 0;
+      transform: translateX(150%);
+    }
+    to {
+      opacity: 1;
+      transform: translate(0%);
+    }
+  }
+  
+  @keyframes contentHidden {
+    from {
+      opacity: 1;
+      transform: translate(0%);
+    }
+    to {
+      opacity: 0;
+      transform: translateX(150%);
+    }
+  }
+  
+  .IconButton {
+    position: absolute;
+    top: 2.4rem;
+    right: 2.4rem;
+    border: 0;
+    background: transparent;
+    color: #8d8d99;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .IconButton svg {
+    transition: transform 0.3s;
+  }
+  .IconButton:hover svg {
+    transition: transform 0.3s;
+    transform: scale(1.2);
+  }
+  
+  .ContainerMenu {
+    padding: 7.2rem 4.8rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-bottom: 2rem;
+    overflow: auto;
+  }
+  .DialogTitle {
+    color: rgba(225, 225, 230, 1);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 3.2rem;
+  }
+  .SelectCard {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  
+  
+  
+    margin-block: 1rem;
+  }
+  .CardItem {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .CardInfo {
+    margin-top: 3.2rem;
+  }
+  
+  .CardInfo div:first-child {
+    margin-bottom: 0.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .price {
+    font-size: 2.4rem;
+    line-height: 140%;
+  }
+  
+  .CardInfo div:last-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .cardTitle h1 {
+    font-size: 1.8rem;
+    color: #c4c4cc;
+    font-weight: normal;
+    line-height: 160%;
+    margin-bottom: 0.2rem;
+  }
+  .cardTitle strong {
+    color: #e1e1e6;
+    font-size: 1.8rem;
+    line-height: 160%;
+    margin-bottom: 0.8rem;
+    display: block;
+  }
+  .cardTitle strong span {
+    color: #00875f;
+    font-size: 1.4rem;
+  }
+  .cardTitle button {
+    border: 0;
+    background: 0;
+    color: #00875f;
+    font-weight: bold;
+    transition: color 0.3s;
+    cursor: pointer;
+  }
+  .cardTitle button:hover {
+    color: #00b37e;
+  }
+  
+  .CardImg {
+    border-radius: 8px;
+    height: 9.3rem;
+    width: 10rem;
+    overflow: hidden;
+    background: linear-gradient(180deg, #1ea483 0%, #7465d4 100%);
+  }
+  
+  .CardImg img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .ButtonFinish {
+    background-color: #00875f;
+    padding: 2rem 3.2rem;
+    margin-top: 3.5rem;
+    border-radius: 0.8rem;
+    color: #ffffff;
+    font-size: 1.8rem;
+    border: 0;
+    font-weight: 700;
+    line-height: 160%;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
+  }
+  .ButtonFinish:not(:disabled):hover {
+    background: #00b37e;
+  }
+  
+  .ButtonFinish:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+  
+  .CartEmpty h1 {
+    font-size: 2rem;
+    color: #00875f;
+    margin-block: 1.5rem;
+    text-align: center;
+  }
+  .CartEmpty div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .CartEmpty div svg {
+    color: #00875f;
+  }
+  
+  @keyframes overlayShow {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
